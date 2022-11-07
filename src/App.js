@@ -10,9 +10,10 @@ function App() {
       </header>
       <main>
         <ListMessage />
+        <PostMessage />
       </main>
       <footer>
-        <PostMessage />
+        <p>this is footer</p>
       </footer>
     </div>
   );
