@@ -1,15 +1,19 @@
 import './App.css';
-import ListMessage from "./features/ListMessage";
-import PostMessage from "./features/PostMessage";
+import ListMessage from './features/ListMessages';
+import PostMessage from './features/PostMessages';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className='App'>
+      <header className='App-header'>
         <nav></nav>
       </header>
-      <main><ListMessage/></main>
-      <footer><PostMessage/></footer>
+      <main>
+        <ListMessage />
+      </main>
+      <footer>
+        <PostMessage />
+      </footer>
     </div>
   );
 }
