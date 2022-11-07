@@ -1,6 +1,5 @@
 import './App.css';
-import ListMessage from './features/ListMessages';
-import PostMessage from './features/PostMessages';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -9,8 +8,7 @@ function App() {
         <nav>this is nav</nav>
       </header>
       <main>
-        <ListMessage />
-        <PostMessage />
+        <Outlet />
       </main>
       <footer>
         <p>this is footer</p>
