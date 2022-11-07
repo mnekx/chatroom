@@ -1,4 +1,6 @@
 import './App.css';
+import ListMessage from "./features/ListMessage";
+import PostMessage from "./features/PostMessage";
 
 function App() {
   return (
