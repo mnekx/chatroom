@@ -10,9 +10,6 @@ function App() {
       <main>
         <Outlet />
       </main>
-      <footer>
-        <p>this is footer</p>
-      </footer>
     </div>
   );
 }
