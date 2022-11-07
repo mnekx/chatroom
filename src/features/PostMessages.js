@@ -1,3 +1,3 @@
-const PostMessage = () => <>Post a message component</>
+const PostMessage = () => <p>Post a message component</p>
 
 export default PostMessage
