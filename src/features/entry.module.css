@@ -1,3 +1,8 @@
+.Form {
+    width: 60%;
+    display: flex;
+}
+
 .Input {
     width: 90%;
     height: 100%;
