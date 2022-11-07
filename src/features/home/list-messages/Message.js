@@ -10,8 +10,10 @@ export default function Message() {
   return (
     <Card sx={{ width: '60%', display: 'flex' }}>
       <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
+        
         <IconButton aria-label='user'>
           <AccountBoxIcon />
+          <Typography variant='body2'>User name</Typography>
         </IconButton>
       </Box>
       <CardContent>
