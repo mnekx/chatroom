@@ -1,3 +1,5 @@
-const Entry = () => <form><input type="text" placeholder="Name" /><button type="submit">Enter</button></form>
+import styles from './entry.module.css';
+
+const Entry = () => <form><input type="text" placeholder="Name" className={styles.Input} /><button className={styles.Button} type="submit">Enter</button></form>
 
 export default Entry;

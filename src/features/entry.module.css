@@ -1,0 +1,22 @@
+.Input {
+    width: 90%;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-size: large;
+}
+
+.Button {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.Button:active {
+    background-color: black;
+}
