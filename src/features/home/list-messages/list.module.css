@@ -1,0 +1,13 @@
+.Root {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.Mine p, .Mine button{
+    color: green;
+}
+
+li.Mine {
+    display: flex;
+    justify-content: flex-end;
+}
