@@ -8,13 +8,19 @@ import Box from '@mui/material/Box';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import { useUserState } from "../../context/user";
 import {add} from '../messages/messagesSlice'
-import { useDispatch } from "react-redux";
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from "react";
 
 const PostMessage = () => {
   const currUser = useUserState();
   const dispatch = useDispatch();
   const [message, setMessage] = useState('');
+  const messages = useSelector(state => state.messages);
+
+  useEffect(() => {
+    localStorage.setItem('messages', JSON.stringify(messages));
+  }, [messages]);
+  
   const handleAdd = (e) => {
     e.preventDefault();
     const user = currUser.name
