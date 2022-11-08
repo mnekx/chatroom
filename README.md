@@ -8,9 +8,6 @@
 
 - React
 - Redux
-
-## Getting Started
-
 ### Setup
 
 1. git clone https://github.com/mnekx/chatroom.git
@@ -21,6 +18,9 @@
 11. access the app on http://localhost:3000/
 12. For every new user please use the '/' route to enter the chatroom
 
+
+## Testing
+run: npm test
 ## Authors
 
 👤 **Mnemba Chambuya**
