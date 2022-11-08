@@ -15,8 +15,8 @@ export default function Message({message}) {
           <Typography variant='body2'>{message.user}</Typography>
         </IconButton>
       </Box>
-      <CardContent>
-        <Typography variant='body2'>
+      <CardContent sx={{width: 'fit-content'}}>
+        <Typography variant='body2' sx={{width: 'fit-content'}}>
           {message.message}
         </Typography>
       </CardContent>
