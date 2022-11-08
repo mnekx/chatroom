@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 const UserStateContext = React.createContext();
 const UserDispatchContext = React.createContext();
 
-export function useAuthState() {
+export function useUserState() {
     const context = React.useContext(UserStateContext);
     if (context === undefined) {
       throw new Error("UserStateContext must be used within a UserProvider");
@@ -13,7 +13,7 @@ export function useAuthState() {
     return context;
   }
    
-  export function useAuthDispatch() {
+  export function useUserDispatch() {
     const context = React.useContext(UserDispatchContext);
     if (context === undefined) {
       throw new Error("useAuthDispatch must be used within a UserProvider");

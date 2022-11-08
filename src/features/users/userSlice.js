@@ -5,6 +5,7 @@ export const userSlice = createSlice({
     initialState: {name: 'default'},
     reducers: {
         enter: (state,action) => {
+            console.log(action);
             state.name=action.payload;
             return state
         }
