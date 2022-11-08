@@ -1,14 +1,11 @@
+import { useSelector } from "react-redux";
 import styles from './list.module.css';
 import Message from "./Message";
 
 const ListMessage = () => {
-  const messages = [];
-  for(let i=0; i<50; i++) {
-    messages.push('Message '+i);
-  }
-  console.log(messages);
+  const messages = useSelector(state => state.messages);
   return (
-  <ul className={styles.Root}>{messages.map((message => <li><Message/></li>))}</ul>
+  <ul className={styles.Root}>{messages.map(((message, index) => <li key={index}><Message message={message}/></li>))}</ul>
 )};
 
 export default ListMessage;

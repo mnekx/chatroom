@@ -5,22 +5,19 @@ import Typography from '@mui/material/Typography';
 import { IconButton } from '@mui/material';
 import Box from '@mui/material/Box';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
-
-export default function Message() {
+export default function Message({message}) {
   return (
-    <Card sx={{ width: '60%', display: 'flex' }}>
+    <Card sx={{ width: '60%', display: 'flex', marginBottom: '1rem'}}>
       <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
         
         <IconButton aria-label='user'>
           <AccountBoxIcon />
-          <Typography variant='body2'>User name</Typography>
+          <Typography variant='body2'>{message.user}</Typography>
         </IconButton>
       </Box>
       <CardContent>
         <Typography variant='body2'>
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
+          {message.message}
         </Typography>
       </CardContent>
     </Card>
