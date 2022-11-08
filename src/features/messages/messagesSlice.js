@@ -5,6 +5,7 @@ export const messagesSlice = createSlice({
     initialState: [{user: 'default', message: 'default message'}, {user: 'default', message: 'Another default message'}],
     reducers: {
         add: (state,action) => {
+            console.log(action)
             return [...state, action.payload]
         }
     }

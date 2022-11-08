@@ -15,7 +15,7 @@ const Entry = () => {
     }
   return (
     <form className={styles.Form} onSubmit={(e) => handleEntry(e)}>
-      <input type='text' placeholder='Name' onChange={(e) => setName(e.target.value)} className={styles.Input} />
+      <input type='text' required placeholder='Name' onChange={(e) => setName(e.target.value)} className={styles.Input} />
       <button className={styles.Button} type='submit' >
         Enter
       </button>
